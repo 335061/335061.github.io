@@ -4,24 +4,24 @@
 # Lines starting with # are comments and are ignored.
 # ============================================================
 
-name=Prof. Pin Luarn
+name=Bashar Alkassis
 
-title1=Top 2% Scientist Worldwide (2020-2026)
+title1=Digital Business & E-Commerce Professional
 
-title2=2024 National Teaching Award Laureate
+title2=M.Sc Student in Digital Business Management
 
-expertise=Internet Marketing, AI Applications, Agentic AI
+expertise=E-Commerce, Digital Marketing, Social Media Strategy, Content Creation, Digital Business Models
 
-education=Ph.D. in Industrial Engineering, University of Wisconsin-Madison, USA
+education=M.Sc Digital Business Management, Pforzheim University / Bachelors of Economics and Finance, Bard College New York
 
-email=luarn@mail.ntust.edu.tw
-linkedin=https://pse.is/8nn88y
+email=alkassib@hs-pforzheim.de
+linkedin=https://www.linkedin.com/in/bashar-alkassis
 
-about1=Prof. Luarn earned his B.S. in Industrial Engineering from Tunghai University,
-about2=and his M.S. and Ph.D. in Industrial Engineering from the University of Wisconsin-Madison.
-about3=Named among the world's top 2% scientists by Stanford University & Elsevier for seven consecutive years (2020-2026).
-about4=Recipient of the 2024 Presidential National Teaching Award, Taiwan
+about1=Digital business professional with over 7 years of hands-on experience in e-commerce, digital marketing, and multimedia production
+about2=Proven track record of building and managing online business operations, developing high-impact content, and driving brand growth across digital platforms
+about3=Currently pursuing an M.Sc. in Digital Business Management, with a growing focus on AI-driven solutions and scalable digital business models.
+about4=Recognized for strong ownership, adaptability, and the ability to translate ideas into impactful digital solutions.
 
-phone=+886-2-2737-6754
+phone=+491781355265
 
-location=T2-409, National Taiwan University of Science and Technology, No. 43, Sec. 4, Keelung Rd., Taipei, Taiwan
+location=Ludwigsburg, Germany
