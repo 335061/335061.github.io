@@ -1,3 +1,2 @@
 Extra Credit Challenge
-https://drluarn.github.io/mediapipeCC.html
 https://335061.github.io/gesture_galaxy.html
