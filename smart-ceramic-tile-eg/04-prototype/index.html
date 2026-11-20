@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Ceramic Tile Maker — Egypt</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #c2410c;
+      --accent-dark: #9a3412;
+      --sand: #f8fafc;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: var(--sand);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--bg);
+      color: #fff;
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .brand { font-weight: 700; font-size: 1.15rem; letter-spacing: 0.3px; }
+    .brand span { color: #fb923c; }
+    .nav-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-dark); }
+    .btn-outline { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.4); }
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #fff;
+      padding: 4.5rem 5% 4rem;
+    }
+    .hero-inner { max-width: 1080px; margin: 0 auto; }
+    .eyebrow {
+      color: #fb923c;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      margin-bottom: 0.75rem;
+    }
+    .hero h1 { font-size: clamp(2rem, 4vw, 3.1rem); line-height: 1.15; margin-bottom: 1.25rem; max-width: 820px; }
+    .hero p { font-size: 1.12rem; color: #cbd5e1; max-width: 700px; margin-bottom: 2rem; }
+    .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .metrics {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 5%;
+    }
+    .metrics-grid {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1.5rem;
+    }
+    .metric-card strong { display: block; font-size: 1.45rem; color: var(--accent); }
+    .metric-card span { color: var(--muted); font-size: 0.92rem; }
+    section.content { max-width: 1080px; margin: 0 auto; padding: 4rem 5%; }
+    h2.section-title { font-size: 1.85rem; margin-bottom: 0.5rem; }
+    p.section-sub { color: var(--muted); margin-bottom: 2.25rem; }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.75rem;
+    }
+    .card h3 { margin-bottom: 0.6rem; font-size: 1.15rem; }
+    .card p { color: var(--muted); font-size: 0.96rem; }
+    .roi-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+    .field { margin-bottom: 1.2rem; }
+    .field label { display: block; font-weight: 600; margin-bottom: 0.35rem; font-size: 0.92rem; }
+    .field input {
+      width: 100%;
+      padding: 0.65rem 0.8rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    .warn { color: #b91c1c; font-size: 0.85rem; margin-top: 0.3rem; min-height: 1.2em; }
+    .roi-result {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      border-radius: 10px;
+      padding: 1.5rem;
+    }
+    .roi-result .big { font-size: 2rem; font-weight: 800; color: var(--accent); margin: 0.4rem 0; }
+    .cta-banner {
+      background: var(--bg);
+      color: #fff;
+      border-radius: 12px;
+      padding: 2.5rem;
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .cta-banner p { color: #cbd5e1; max-width: 620px; margin-top: 0.4rem; }
+    footer { text-align: center; padding: 2rem 5%; color: var(--muted); font-size: 0.88rem; }
+    @media (max-width: 480px) {
+      .nav-actions, .hero-ctas { width: 100%; }
+      .nav-actions .btn, .hero-ctas .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">SmartTile<span>EG</span></div>
+    <div class="nav-actions">
+      <a href="#roi" class="btn btn-outline">ROI Calculator</a>
+      <a href="#contact" class="btn btn-primary">Book a Live Demo</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">INTELLIGENT CERAMIC MANUFACTURING FOR EGYPT</div>
+      <h1>Smarter Tiles. Fewer Rejects. Built for Egypt's Next Wave of Construction.</h1>
+      <p>Precision smart tile production that reduces kiln and glaze waste, locks in batch-to-batch shade consistency, and turns custom architectural designs into faster, higher-margin runs.</p>
+      <div class="hero-ctas">
+        <a href="#roi" class="btn btn-primary">Request a Plant ROI Assessment</a>
+        <a href="#contact" class="btn btn-outline">Book a Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="metrics">
+    <div class="metrics-grid">
+      <div class="metric-card"><strong>Up to 35%</strong><span>Lower reject rates via optical & thermal alerts</span></div>
+      <div class="metric-card"><strong>12–18%</strong><span>Energy savings per m² via adaptive kiln curves</span></div>
+      <div class="metric-card"><strong>&lt; 15 Min</strong><span>Changeovers for custom architectural batches</span></div>
+      <div class="metric-card"><strong>&lt; 14 Months</strong><span>Target payback under Egyptian plant economics</span></div>
+    </div>
+  </div>
+
+  <section class="content">
+    <h2 class="section-title">Engineered for Modern Egyptian Tile Plants</h2>
+    <p class="section-sub">Closed-loop telemetry, automated defect inspection, and rapid digital pattern presets.</p>
+    <div class="grid-2">
+      <div class="card">
+        <h3>1. Stop Losing Margin to Firing &amp; Glaze Scrap</h3>
+        <p>Automated inline vision inspection and closed-loop glaze dosing detect pinholes, warping, and shade drift before defective tiles consume costly kiln capacity.</p>
+      </div>
+      <div class="card">
+        <h3>2. Lock In Batch-to-Batch Shade &amp; Caliber Precision</h3>
+        <p>Digital recipe memory ensures repeat orders for mega-projects, hotels, and residential compounds match earlier deliveries down to the exact tone and dimension.</p>
+      </div>
+      <div class="card">
+        <h3>3. Win High-Margin Custom &amp; Hospitality Orders</h3>
+        <p>Switch effortlessly between standard production and bespoke geometric, textured, or large-format runs without halting your line for hours of manual recalibration.</p>
+      </div>
+      <div class="card">
+        <h3>4. Built for Egyptian Industrial Zones</h3>
+        <p>Bilingual English/Arabic operator controls, ruggedized dust-and-heat sensors, remote diagnostics, and rapid local spare-parts support across 10th of Ramadan, Sadat City, and Ain Sokhna.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="roi">
+    <h2 class="section-title">Calculate Your Plant's Annual Savings</h2>
+    <p class="section-sub">Adjust your daily output and current reject rate to estimate annual scrap reduction and energy savings in EGP.</p>
+    <div class="roi-box">
+      <div>
+        <div class="field">
+          <label for="output">Daily Production Output (m² / day, 500–50,000)</label>
+          <input type="number" id="output" value="8000" min="500" max="50000" />
+        </div>
+        <div class="field">
+          <label for="scrap">Current Reject / Scrap Rate (%, 1–40%)</label>
+          <input type="number" id="scrap" value="9" min="1" max="40" step="0.5" />
+        </div>
+        <div class="field">
+          <label for="price">Average Selling Price (EGP / m², 50–1,500)</label>
+          <input type="number" id="price" value="180" min="50" max="1500" />
+        </div>
+        <div class="warn" id="warnMsg"></div>
+      </div>
+      <div class="roi-result">
+        <div>Estimated Annual Value Recovered (EGP)</div>
+        <div class="big" id="savingsOut">EGP 14,918,400 / yr</div>
+        <p id="breakdownOut">Based on 320 operating days/year, a 30% relative reduction in firing/glaze rejects, and 14% kiln energy optimization.</p>
+      </div>
+    </div>
+
+    <div class="cta-banner" id="contact">
+      <div>
+        <h3>De-Risk Your Upgrade with an On-Site Pilot Audit</h3>
+        <p>Our process engineers benchmark your current clay body, glaze line, and kiln profile—delivering a documented payback projection before full line integration.</p>
+      </div>
+      <a href="mailto:pilots@smarttile-eg.example" class="btn btn-primary">Schedule Engineering Consultation</a>
+    </div>
+  </section>
+
+  <footer>
+    Smart Ceramic Tile Maker &bull; Industrial Pilot &amp; Commercial Launch Package (Egypt)
+  </footer>
+
+  <script>
+    const outputEl = document.getElementById('output');
+    const scrapEl = document.getElementById('scrap');
+    const priceEl = document.getElementById('price');
+    const warnEl = document.getElementById('warnMsg');
+    const savingsEl = document.getElementById('savingsOut');
+
+    function clamp(val, min, max) {
+      return Math.min(Math.max(val, min), max);
+    }
+
+    function recalc() {
+      let out = parseFloat(outputEl.value) || 500;
+      let scrap = parseFloat(scrapEl.value) || 1;
+      let price = parseFloat(priceEl.value) || 50;
+      let clamped = false;
+
+      if (out < 500 || out > 50000) { out = clamp(out, 500, 50000); clamped = true; }
+      if (scrap < 1 || scrap > 40) { scrap = clamp(scrap, 1, 40); clamped = true; }
+      if (price < 50 || price > 1500) { price = clamp(price, 50, 1500); clamped = true; }
+
+      warnEl.textContent = clamped ? "Inputs clamped to valid Egyptian plant operating bounds." : "";
+
+      const annualSqm = out * 320;
+      const recoveredSqm = annualSqm * (scrap / 100) * 0.30;
+      const scrapSavings = recoveredSqm * price;
+      const energySavings = annualSqm * (price * 0.18) * 0.14;
+      const total = Math.round(scrapSavings + energySavings);
+
+      savingsEl.textContent = "EGP " + total.toLocaleString("en-US") + " / yr";
+    }
+
+    [outputEl, scrapEl, priceEl].forEach(el => el.addEventListener('input', recalc));
+    recalc();
+  </script>
+</body>
+</html>
